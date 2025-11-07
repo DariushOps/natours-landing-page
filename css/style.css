@@ -827,6 +827,11 @@ body {
     float: none;
   }
 }
+@media (max-width: 37.5em) {
+  .footer__copyright {
+    text-align: center;
+  }
+}
 
 .row {
   max-width: 114rem;
@@ -991,12 +996,14 @@ body {
 }
 @media (max-width: 37.5em) {
   .navigation__link:link span, .navigation__link:visited span {
-    margin-right: 0.7rem;
+    margin-right: 0.6rem;
   }
 }
 @media (max-width: 37.5em) {
   .navigation__link:link, .navigation__link:visited {
-    font-size: 2rem;
+    padding: 1.5rem 0;
+    font-size: 1.9rem;
+    font-weight: 400;
   }
 }
 .navigation__link:hover, .navigation__link:active {

@@ -74,5 +74,8 @@
       width: 100%;
       float: none;
     }
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }

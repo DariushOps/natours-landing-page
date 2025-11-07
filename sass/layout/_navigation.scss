@@ -92,12 +92,14 @@
         display: inline-block;
 
         @include respond(phone) {
-          margin-right: 0.7rem;
+          margin-right: 0.6rem;
         }
       }
 
       @include respond(phone) {
-        font-size: 2rem;
+        padding: 1.5rem 0;
+        font-size: 1.9rem;
+        font-weight: 400;
       }
     }
 
