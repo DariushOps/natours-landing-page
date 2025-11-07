@@ -26,6 +26,11 @@
       text-decoration: none;
       display: inline-block;
       transition: all 0.3s;
+
+      @include respond(tab-port) {
+        top: 0;
+        right: 2rem;
+      }
     }
 
     &:hover {
@@ -44,11 +49,22 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.3);
     display: table;
     overflow: hidden;
+
+    @include respond(tab-port) {
+      width: 90%;
+      height: auto;
+      display: block;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      width: 0;
+      visibility: hidden;
+    }
   }
 
   &__right {
@@ -56,6 +72,14 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-port) {
+      width: 100%;
+      height: auto;
+      display: block;
+      padding: 3.5rem 2rem 2.5rem 2rem;
+      display: block;
+      text-align: center;
+    }
   }
 
   &__img {
@@ -75,5 +99,11 @@
     column-gap: 4rem;
     clip-rule: 0.1rem solid $color-grey-light-2;
     hyphens: auto;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      column-count: 1;
+    }
   }
 }
